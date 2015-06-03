@@ -1,2 +1,2 @@
 # QADEV03Rep
-This is the repository of QADEV03 CUIT Classes
+This is the repository of QADaEV03 JavaScript Classes
