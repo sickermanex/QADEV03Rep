@@ -10,23 +10,48 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
+    <script src="app/js/lib/jquery-1.11.3.js"  type='text/javascript'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'/>
-    <script src="app/js/src/main.js" type="application/javascript"></script>
+    <script src="app/js/src/main.js" type="text/javascript"?></script>
+    <script src="app/js/src/Pr1.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
     <nav class="navbar navbar-inverse">
         <ul class="nav navbar-nav">
-            <li><a href="" onclick="TheBody()">Practica 1</a></li>
-            <li><a href="#">Hola</a></li>
-            <li><a href="#">Hola</a></li>
+            <li><a class="navbar-brand" href="http://localhost:63342/QADEV03Rep/training/front-end/index.html">JavaScript</a></li>
+
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Homeworks and practices <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="drop5" >
+                    <li><a href="#" onclick="TheBody()">Session 2 - Recursive operations</a></li>
+                    <li><a href="#" onclick="TheBody2()">Session 3 - Counting words</a></li>
+                    <li><a href="#" onclick="TheBody2()">Session 3 - Current date with special format</a></li>
+                    <li><a href="#" onclick="TheBody3()">Session 4 - Capicua numbers</a></li>
+                    <li><a href="#" onclick="TheBody3()">Session 4 - Get the first N even/odd numbers</a></li>
+                    <li><a href="#" onclick="TheBody3()">Session 4 - Factorial of N</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </header>
-<div id="TheBody">
-
+<div class="container" >
+    <div class="jumbotron" name ="MainBody" id="MainBody">
+        <h1>JavaScript</h1>
+        <h2>Manuel Vasquez Pimentel</h2>
+        <h3>Manuel.Vasquez@fundacion-jala.org</h3>
+        <h5>To send me and e-mail just click on this <a href="mailto:Manuel.Vasquez@fundacion-jala.org?subject=JavaScript Practicas"><button type="button" class="btn btn-success btn-xs">Button</button></a></h5>
+    </div>
 </div>
-<h4>Hola mi peñaaaaaaaaaaa</h4>
 </body>
 </html>
+
+<ul id="menu2" class="dropdown-menu" >
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+</ul>

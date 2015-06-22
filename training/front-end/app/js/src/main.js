@@ -32,6 +32,15 @@ var calculateAge = function(bornYear) {
 };
 
 var TheBody = function(){
-    var url = "D:\\JS_Apps\\QADEV03Rep\\index.html";
-    $("#TheBody").load(url);
+    var url = "http://localhost:63342/QADEV03Rep/training/front-end/Session2.html";
+    $("#MainBody").fadeOut(50);
+    $("#MainBody").load(url);
+    $("#MainBody").fadeIn(500);
+};
+
+var TheBody3 = function(){
+    var url = "http://localhost:63342/QADEV03Rep/training/front-end/Session4.html";
+    $("#MainBody").fadeOut(50);
+    $("#MainBody").load(url);
+    $("#MainBody").fadeIn(500);
 };
