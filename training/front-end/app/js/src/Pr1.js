@@ -178,3 +178,40 @@ var fact = function(n){
         f*=i;
     console.log('The factorial of',n,'is',f)
 };
+
+/*=======================================================================*/
+//Lab4
+
+//var diHola = function(){
+//    console.log('Ola k ase');
+//};
+//
+//var diHola2 = function(name){
+//    console.log('Ola k ase '+name);
+//};
+
+//Anonymous and auto-executable functions
+(function(){
+    console.log('Ola k ase ');
+})();
+
+(function(name){
+    console.log('Ola k ase '+name)
+})('Mono');
+
+var GetdiHola = function(){
+    return function(){
+        console.log('Oliwis!');
+    };
+};
+
+//var diHola = GetdiHola();
+
+var diHola = (function(){
+    return function(name){
+        console.log('Oliwis '+name+'!');
+    };
+})();
+
+
+
