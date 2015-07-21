@@ -1,5 +1,5 @@
 /**
- * Created by .
+ * Created by TTT team.
  */
 var board = require('./GameBoard.js');
 
