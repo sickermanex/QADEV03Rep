@@ -1,5 +1,5 @@
 /**
- * Created by Manu on 18/07/2015.
+ * Created by .
  */
 var board = require('./GameBoard.js');
 
