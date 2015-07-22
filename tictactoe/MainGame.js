@@ -37,3 +37,51 @@ var TTT = function(){
     }
 
 };
+TTT.prototype.initGame = function(){
+    this.board = board.initGrid();
+    this.drawTable();
+    this.playerMove(this.moves);
+    console.log('');
+    this.drawTable();
+};
+
+TTT.prototype.error = function(){
+    throw new Error('Invalid quantity of movements');
+};
+TTT.prototype.drawTable = function(){
+    console.log(board.grid.join('\n'));
+};
+
+TTT.prototype.playerMove = function(moves){
+    var mov  = moves.split('');
+    for(var i = 0 ; i <= mov.length ; i++) {
+        if (i % 2 == 0) {
+            board.setValue(mov[i], 'X');
+        }
+        else if (i % 2 != 0) {
+            board.setValue(mov[i], 'O');
+        }
+
+        if (i >= 5)
+        {
+            if (board.checkifWin('XXX')) {
+                this.winner = 'Player 1';
+                break;
+            }
+            else if (board.checkifWin('OOO')) {
+                this.winner = 'Player 2';
+                break;
+            }
+            else {
+                this.winner = 'Tied game!';
+            }
+        }
+    }
+};
+
+TTT.prototype.gameResults = function(){
+    console.log('The result of the game is:'+this.winner);
+    return 'The result of the game is:'+this.winner;
+};
+//var Game = new TTT();
+module.exports = TTT;
